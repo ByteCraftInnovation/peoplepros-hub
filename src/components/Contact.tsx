@@ -5,27 +5,30 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
-
 const Contact = () => {
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     message: ""
   });
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
       title: "Message sent!",
-      description: "We'll get back to you within 24 hours.",
+      description: "We'll get back to you within 24 hours."
     });
-    setFormData({ name: "", email: "", phone: "", message: "" });
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      message: ""
+    });
   };
-
-  return (
-    <section id="contact" className="py-24 bg-muted/30">
+  return <section id="contact" className="py-24 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -58,9 +61,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="font-semibold mb-1">Phone</div>
-                    <a href="tel:+1234567890" className="text-muted-foreground hover:text-primary transition-colors">
-                      +1 (234) 567-890
-                    </a>
+                    <a href="tel:+1234567890" className="text-muted-foreground hover:text-primary transition-colors">(+91) 7065789200</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -69,8 +70,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="font-semibold mb-1">Office</div>
-                    <div className="text-muted-foreground">
-                      123 Business District<br />
+                    <div className="text-muted-foreground">E 17 B, Sobha International City, Gurugram, Haryana 12207, India<br />
                       Your City, State 12345
                     </div>
                   </div>
@@ -83,38 +83,28 @@ const Contact = () => {
             <CardContent className="pt-6">
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <Input
-                    placeholder="Your Name"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    required
-                  />
+                  <Input placeholder="Your Name" value={formData.name} onChange={e => setFormData({
+                  ...formData,
+                  name: e.target.value
+                })} required />
                 </div>
                 <div>
-                  <Input
-                    type="email"
-                    placeholder="Email Address"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    required
-                  />
+                  <Input type="email" placeholder="Email Address" value={formData.email} onChange={e => setFormData({
+                  ...formData,
+                  email: e.target.value
+                })} required />
                 </div>
                 <div>
-                  <Input
-                    type="tel"
-                    placeholder="Phone Number"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  />
+                  <Input type="tel" placeholder="Phone Number" value={formData.phone} onChange={e => setFormData({
+                  ...formData,
+                  phone: e.target.value
+                })} />
                 </div>
                 <div>
-                  <Textarea
-                    placeholder="Tell us about your needs..."
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    rows={5}
-                    required
-                  />
+                  <Textarea placeholder="Tell us about your needs..." value={formData.message} onChange={e => setFormData({
+                  ...formData,
+                  message: e.target.value
+                })} rows={5} required />
                 </div>
                 <Button type="submit" className="w-full" size="lg">
                   Send Message
@@ -124,8 +114,6 @@ const Contact = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
