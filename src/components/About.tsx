@@ -1,5 +1,5 @@
 import { CheckCircle } from "lucide-react";
-import teamAbout from "@/assets/team-about.jpeg";
+import teamAbout from "@/assets/team-about.png";
 const features = ["Expert HR professionals with industry experience", "Customized solutions for businesses of all sizes", "Compliance-focused approach", "Technology-driven processes", "24/7 support and consultation"];
 const About = () => {
   return <section id="about" className="py-24">
