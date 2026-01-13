@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
-            <img src={logo} alt="YoBee xp" className="h-14 w-auto mb-4" />
+            <img src={logo} alt="YoBee xp" className="h-18 w-auto mb-4" />
             <p className="text-secondary-foreground/80 max-w-md">
               Your trusted partner in HR excellence. Empowering businesses with innovative 
               solutions for a better workplace.
