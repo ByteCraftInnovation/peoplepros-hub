@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Shield, Users, FileCheck, Wallet, Heart } from "lucide-react";
+import { Shield, Users, FileCheck, Wallet, Heart, TrendingUp } from "lucide-react";
 
 const services = [
   {
@@ -26,6 +26,11 @@ const services = [
     icon: Heart,
     title: "Employee Engagement",
     description: "Foster a positive workplace culture with programs designed to boost morale, productivity, and retention."
+  },
+  {
+    icon: TrendingUp,
+    title: "Compensation & Benefits",
+    description: "Market-aligned compensation strategies, benchmarking, performance-linked incentives, and comprehensive benefits advisory to drive results and sustainable growth."
   }
 ];
 
