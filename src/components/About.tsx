@@ -26,17 +26,13 @@ const About = () => {
                 </div>)}
             </div>
             <div className="pt-6">
-              <div className="grid grid-cols-3 gap-8">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-1">100+</div>
-                  <div className="text-sm text-muted-foreground">Clients Served</div>
-                </div>
+              <div className="grid grid-cols-2 gap-8">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary mb-1">98%</div>
                   <div className="text-sm text-muted-foreground">Satisfaction Rate</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-1">17+</div>
+                  <div className="text-3xl font-bold text-primary mb-1">22+</div>
                   <div className="text-sm text-muted-foreground">Years Experience</div>
                 </div>
               </div>
