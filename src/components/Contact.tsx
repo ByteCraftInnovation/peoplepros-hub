@@ -50,8 +50,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="font-semibold mb-1">Email</div>
-                    <a href="mailto:info@yobeexp.com" className="text-muted-foreground hover:text-primary transition-colors">
-                      info@yobeexp.com
+                    <a href="mailto:hello@yobeexp.com" className="text-muted-foreground hover:text-primary transition-colors">
+                      hello@yobeexp.com
                     </a>
                   </div>
                 </div>
@@ -61,7 +61,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="font-semibold mb-1">Phone</div>
-                    <a href="tel:+1234567890" className="text-muted-foreground hover:text-primary transition-colors">(+91) 7065789200</a>
+                    <a href="tel:+917065789200" className="text-muted-foreground hover:text-primary transition-colors">(+91) 7065789200</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -70,8 +70,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="font-semibold mb-1">Office</div>
-                    <div className="text-muted-foreground">E 17 B, Sobha International City, Gurugram, Haryana 12207, India<br />
-                      Your City, State 12345
+                    <div className="text-muted-foreground">E 17 B, Sobha International City, Gurugram, Haryana 12207, India
                     </div>
                   </div>
                 </div>
